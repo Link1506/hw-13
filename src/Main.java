@@ -40,7 +40,8 @@ public class Main {
         } else if (deliveryDistance <= 100) {
             return " Потребуется " + days + 2 + " дня.";
         } else {
-            throw new RuntimeException(" Доставки нет.");
+            return "Доставка невозможна";
+
         }
 
     }
@@ -53,7 +54,7 @@ public class Main {
         System.out.println(" Task 2");
         printVersion(0, 2015);
         System.out.println("Task 3");
-        String box = deliveryDay(120);
+        String box = deliveryDay(100);
         System.out.println(box);
     }
 
